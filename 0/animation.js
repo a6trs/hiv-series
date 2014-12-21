@@ -15,24 +15,26 @@ var initStage = function () {
         {x: 0.2, y: 0.5, ax: 0.2, ay: 0.5,
             fontsize: 64, text: '1900', colour: [108, 108, 0]},
         ['+',
-            ['go-number', 1, 1900 + now.getYear()],
-            ['delay', 5]
+            ['ease-cubic-out', ['go-number', 2, 1900 + now.getYear()]],
+            ['change-text', 1900 + now.getYear() + '.'],
+            ['delay', 4]
         ]
     ));
     acg.put(5.5, acg.text(
         {x: 0.6, y: 0.5, ax: 0.6, ay: 0.5,
             fontsize: 64, text: '0', colour: [108, 128, 32]},
         ['+',
-            ['go-number', 1, 1 + now.getMonth()],
-            ['delay', 3.5]
+            ['ease-cubic-out', ['go-number', 2, 1 + now.getMonth()]],
+            ['change-text', 1 + now.getMonth() + '.'],
+            ['delay', 2.5]
         ]
     ));
     acg.put(7, acg.text(
         {x: 0.8, y: 0.5, ax: 0.8, ay: 0.5,
             fontsize: 64, text: '0', colour: [64, 128, 192]},
         ['+',
-            ['go-number', 1, now.getDate()],
-            ['delay', 2]
+            ['ease-cubic-out', ['go-number', 1.5, now.getDate()]],
+            ['delay', 1.5]
         ]
     ));
 
@@ -49,9 +51,9 @@ var initStage = function () {
         {x: 0.5, y: 0.5, fontsize: 76, text: '365', colour: [64, 64, 128]},
         ['+',
             ['ease-cubic-out',
-                ['go-number', 1, Math.floor((grad_date - now) / (86400 * 1000))]
+                ['go-number', 2, Math.floor((grad_date - now) / (86400 * 1000))]
             ],
-            ['delay', 5]
+            ['delay', 4]
         ]
     ));
     acg.put(14.5, acg.text(
@@ -64,16 +66,16 @@ var initStage = function () {
 
     acg.ext.background(20, [128, 128, 255]);
     acg.put(21, acg.text(
-        {x: 0.5, y: 0.8, fontsize: 38, text: '2014年12月21日，冬至', colour: [0, 0, 0]},
+        {x: 0.5, y: 0.8, fontsize: 44, text: '你知道吗？', colour: [0, 0, 0]},
         ['delay', 7]
     ));
-    acg.put(22, acg.text(
-        {x: 0.5, y: 0.6, fontsize: 28,
-            text: '是2015届6班童鞋共同度过的\n最后一个夜晚最长的日子', colour: [0, 0, 0]},
-        ['delay', 6]
+    acg.put(22.5, acg.text(
+        {x: 0.5, y: 0.6, fontsize: 38, text: '2014年12月21日，冬至', colour: [0, 0, 0]},
+        ['delay', 5.5]
     ));
     acg.put(24, acg.text(
-        {x: 0.5, y: 0.35, fontsize: 64, text: '你，知道吗？', colour: [0, 0, 0]},
+        {x: 0.5, y: 0.4, fontsize: 28,
+            text: '是2015届毕业前\n夜晚最长的一天', colour: [0, 0, 0]},
         ['delay', 4]
     ));
     acg.put(29, acg.text(
@@ -84,7 +86,7 @@ var initStage = function () {
         ]
     ));
     acg.put(30.5, acg.text(
-        {x: 0.5, y: 0.4, fontsize: 44, text: '也要珍爱这个12.21', colour: [128, 128, 255]},
+        {x: 0.5, y: 0.4, fontsize: 30, text: '好好度过12.21的漫漫长夜吧！！', colour: [128, 128, 255]},
         ['+',
             ['tint-to', 0.2, 0, 0, 0],
             ['delay', 2.3]
@@ -101,7 +103,7 @@ var initStage = function () {
     ));
     acg.put(36, acg.text(
         {x: 0.5, y: 0.31, fontsize: 28,
-            text: 'by LSQ\n由于2014.12.20晚上脑洞大开制作\n= =', colour: [255, 255, 255]},
+            text: 'by LSQ\n由于2014.12.20晚上脑洞大开制作\n= =b', colour: [255, 255, 255]},
         ['delay', 3.5]
     ));
 
@@ -110,4 +112,4 @@ var initStage = function () {
     acg.travel(0);
 };
 
-acg.bootstrap('game_canvas', initStage);
+acg.bootstrap('game_canvas', 16 / 9, initStage);
