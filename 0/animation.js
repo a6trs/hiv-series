@@ -110,6 +110,7 @@ var initStage = function () {
     acg.ext.background_commit();
     acg.commit();
     acg.travel(0);
+    cc.director.setDisplayStats(false);
 };
 
 acg.bootstrap('game_canvas', 16 / 9, initStage);
