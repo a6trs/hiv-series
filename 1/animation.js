@@ -3,9 +3,9 @@ acg.ext = acg.ext || {};
 
 var random_highbyte = function () {
     return Math.floor(Math.random() * 128 + 128);
-}
+};
 
-var initStage = function () {
+var init2014 = function () {
     var secsRemaining2014 = Math.floor((new Date(2015, 0, 1) - Date.now()) / 1000);
     acg.put(0, acg.text(
         {x: 0.5, y: 0.75, fontsize: 36,
@@ -75,7 +75,44 @@ var initStage = function () {
     acg.ext.background_commit();
     acg.commit();
     acg.travel(0);
-    //acg.ext.cp_enable();
+};
+
+var init2015 = function () {
+    acg.begin_offset(2);
+    acg.ext.background(-1, [0, 192, 255]);
+    acg.put(0, acg.text(
+        {x: 0.5, y: 0.75, fontsize: 50,
+            text: 'WELCOME TO',
+            colour: [0, 192, 255]},
+        ['+',
+            ['tint-to', 0.2, 0, 0, 0],
+            ['delay', 3.8],
+            ['tint-to', 0.2, 0, 192, 255]
+        ]
+    ));
+    acg.put(1, acg.text(
+        {x: 0.5, y: 1.5, fontsize: 80,
+            text: '2015!!!',
+            colour: [0, 0, 0]},
+        ['+',
+            ['ease-elastic-out', ['move-to', 1, acg.p(0.5, 0.4)], 0.4],
+            ['delay', 2],
+            ['tint-to', 0.2, 0, 192, 255]
+        ]
+    ));
+    acg.end_offset();
+    acg.ext.background_commit();
+    acg.commit();
+    acg.travel(0);
+    acg.ext.cp_enable();
+};
+
+var initStage = function () {
+    if ((new Date()).getFullYear() == 2015) {
+        init2014();
+    } else {
+        init2015();
+    }
     // 不管的，直接用Cocos API了！！
     cc.director.setDisplayStats(false);
 };
