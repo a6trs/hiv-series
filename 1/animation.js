@@ -201,7 +201,7 @@ var init2015 = function () {
 };
 
 var initStage = function () {
-    if ((new Date()).getFullYear() == 2015) {
+    if ((new Date()).getFullYear() != 2015) {
         init2014();
     } else {
         init2015();
