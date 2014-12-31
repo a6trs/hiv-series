@@ -76,6 +76,8 @@ var initStage = function () {
     acg.commit();
     acg.travel(0);
     //acg.ext.cp_enable();
+    // 不管的，直接用Cocos API了！！
+    cc.director.setDisplayStats(false);
 };
 
 acg.bootstrap('game_canvas', 16 / 9, initStage);
