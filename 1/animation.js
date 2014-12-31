@@ -100,8 +100,38 @@ var init2015 = function () {
             ['tint-to', 0.2, 0, 192, 255]
         ]
     ));
+    // -- PLACEHOLDER --
+    acg.put(40, acg.text(
+        {x: 0.5, y: 1.5, fontsize: 80,
+            text: '2015!!!',
+            colour: [0, 0, 0]}, ['delay', 2]
+    ));
+    acg.ext.words(3.7, '好吧……');
+    acg.ext.words(4.5, '我觉得刚才这玩意应该没必要放的。');
+    acg.ext.words(6.2, '毕竟你们都懂的，现在是2015年了。');
+    acg.ext.words(8.7, '哎，对了，');
+    acg.ext.words(9.7, '你有没有奇怪，');
+    acg.ext.words(10.7, '下面的这个白色条是做甚的？');
+    acg.ext.words(12.7, '嗯，你没猜错，');
+    acg.ext.words(14.1, '这货就是给我说话用的。');
+    acg.ext.words(15.6, '好了，好了，不用再调音量了，');
+    acg.ext.words(18.2, '这次是没有声音的。');
+    acg.ext.words(20.0, '不过下次，');
+    acg.ext.words(20.9, '我应该会拿个机器人讲出声音来。');
+    acg.ext.words(22.8, '好了，下面进入正题。');
+    acg.ext.words(23.7, '');
+    acg.ext.background(24, [0, 64, 128]);
+    acg.ext.words(25, '在这辞旧迎新的时刻，');
+    acg.ext.words(26.0, '我想向大家解释一下，');
+    acg.ext.words(27.0, '学校饮水机上面的数字到底是什么。');
+    acg.put(27.8, acg.text(
+        {x: 0.5, y: 0.7, fontsize: 32,
+            text: '//这两件事有什么关系吗……',
+            colour: [255, 255, 255]}, ['delay', 2]
+    ));
     acg.end_offset();
     acg.ext.background_commit();
+    acg.ext.words_commit();
     acg.commit();
     acg.travel(0);
     acg.ext.cp_enable();
