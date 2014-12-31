@@ -101,7 +101,7 @@ var init2015 = function () {
         ]
     ));
     // -- PLACEHOLDER --
-    acg.put(40, acg.text(
+    acg.put(70, acg.text(
         {x: 0.5, y: 1.5, fontsize: 80,
             text: '2015!!!',
             colour: [0, 0, 0]}, ['delay', 2]
@@ -127,6 +127,69 @@ var init2015 = function () {
     acg.put(27.8, acg.text(
         {x: 0.5, y: 0.7, fontsize: 32,
             text: '//这两件事有什么关系吗……',
+            colour: [255, 255, 255]}, ['delay', 2]
+    ));
+    // 洗澡归来，23:08，2014还剩下不到一小时，加油努力赶赶赶！
+    acg.ext.words(28.8, '不管的。');
+    acg.ext.words(29.4, '');
+    // 话说法语真简洁……Que sera sera. (What will be will be.)
+    acg.put(30.5, acg.img('IMG_20141231_151451.jpg',
+        {x: 0.5, y: 0.5, scale: 0.1},
+        ['delay', 3]
+    ));
+    acg.ext.words(31.2, '这玩意，相信大家都见过吧。');
+    acg.put(33.5, acg.img('IMG_20141231_151443.jpg',
+        {x: 0.5, y: 0.5, scale: 0.1},
+        ['+',
+            ['delay', 2.5],
+            ['ease-cubic-out', ['//',
+                ['scale-to', 1, 0.6],
+                ['move-by', 1, acg.p(-0.2, -0.2)]
+            ]],
+            ['delay', 2]
+        ]
+    ));
+    acg.ext.words(33.9, '这玩意，大家也都见过吧。');
+    acg.ext.words(35, '你们有想过这到底是什么意思嘛');
+    acg.ext.words(36.4, '');
+    acg.ext.words(37, '好吧，有些人猜是里面贮存的水量……');
+    acg.ext.words(39.6, '但是，恭喜你，猜错了。');
+    acg.ext.words(41, '仔细想想，');
+    acg.ext.words(41.8, '7854L是1.99m边长正方体的体积');
+    // 23:30，赶紧赶！！赶！！！赶！！！！！！
+    acg.put(43.8, acg.img('a1.png',
+        {x: 0.5, y: 0.5},
+        ['+',
+            ['fade-in', 0.3],
+            ['delay', 2.5],
+            ['fade-out', 0.3]
+        ]
+    ));
+    acg.ext.words(43.5, '把12个顾周8排列成正方体框架');
+    acg.ext.words(45.5, '体积还不到那么多。');
+    acg.ext.words(47.1, '所以，这需要另一个合理的解释。');
+    acg.ext.words(49.0, '我对它的解释，就是：');
+    acg.ext.words(50.0, '有史以来通过饮水机的总水流量。');
+    acg.ext.words(51.4, '而且是过滤的总水量。');
+    acg.ext.words(52.9, '懒得上图了～～直接讲吧。');
+    acg.ext.words(54.2, '为什么我认为它是正确的猜想？');
+    acg.ext.words(55.5, '好吧，根据我无聊的观察结果，');
+    acg.ext.words(57, '它应该是这么工作的：');
+    // 23:45，听着东方卫视晚会的音乐，感觉不错啊，赶赶赶赶赶赶赶！！！～～～～
+    acg.put(57.7, acg.img('a2.png',
+        {x: 0.5, y: 0.5},
+        ['+',
+            ['fade-in', 0.3],
+            ['delay', 5],
+            ['fade-out', 0.3]
+        ]
+    ));
+    acg.ext.words(58.7, '看懂了吧？');
+    acg.ext.words(59.5, '看懂就好了，拜拜～～～');
+    acg.ext.words(61, '');
+    acg.put(62, acg.text(
+        {x: 0.5, y: 0.7, fontsize: 32,
+            text: '//这结尾……',
             colour: [255, 255, 255]}, ['delay', 2]
     ));
     acg.end_offset();
