@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset='utf-8'>
+    <title>Console Simulator</title>
+  </head>
+  <body>
+    <input id='cmd'>
+    <button id='enter'>∩ ∩</button>
+    <div id='result'></div>
+    <script type='application/javascript'>
+      document.getElementById('enter').onclick = function () {
+        var command = document.getElementById('cmd').value;
+        document.getElementById('result').innerHTML += eval(command).toString() + '<br>';
+      };
+    </script>
+  </body>
+</html>
