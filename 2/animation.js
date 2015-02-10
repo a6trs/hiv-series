@@ -11,6 +11,31 @@ putText = function (time, text, delay) {
     ));
 };
 
+var initMainPart = function () {
+    acg.put(0, acg.img('timeline.png',
+        {x: 0.5, y: 0.5, ax: 0, ay: 0.5, opacity: 0.0001, scale: 1.1},
+        ['+',
+            ['fade-in', 0.5],
+            ['delay', 1],
+            ['ease-cubic-out', ['move-by', 2, acg.p(-1.35, 0)]],
+            ['delay', 2],
+            ['move-by', 0.5, acg.p(-0.2, 0)],
+            ['delay', 3]
+        ]
+    ));
+    putText(0, '从开学刷题百二十天，', 2.5);
+    putText(2.5, '隔篁竹，闻水声，', 2);
+    putText(4.5, '如鸣佩环，心乐之。', 2);
+    putText(6.5, '啊不不不不不不，怎么可能！！', 2.5);
+    putText(9, '一模使我们几乎每天把这玩意背一遍，', 3);
+    putText(12, '再加上如此多的《点击》（……）', 2.5);
+    putText(14.5, '用脚趾头想想都知道会不会“心乐之”。', 3);
+    acg.put(18, acg.img('IMG_0018.JPG', {x: 0.5, y: 0.5}, ['delay', 5]));
+    putText(18.5, '在一模准备期间，连这位平常事情不多的老师……', 3);
+    putText(21.5, '都能做出这种错乱的事……', 1.5);
+    putText(23, '可见，一模真是……哎。', 2.5);
+};
+
 var initStage = function () {
     acg.put(0, acg.img('a6_title.png',
         {x: 0.5, y: 0.5, opacity: 0.0001},
@@ -38,6 +63,9 @@ var initStage = function () {
         ]
     ));
     putText(24, '-= 一模前的那些事儿 =-', 4);
+    acg.begin_offset(30);
+    initMainPart();
+    acg.end_offset(30);
     acg.commit();
     acg.ext.cp_enable();
     cc.director.setDisplayStats(false);

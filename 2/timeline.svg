@@ -1,0 +1,289 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="960"
+   height="160"
+   id="svg2"
+   version="1.1"
+   inkscape:version="0.48.4 r9939"
+   sodipodi:docname="timeline.svg"
+   inkscape:export-xdpi="90"
+   inkscape:export-ydpi="90">
+  <defs
+     id="defs4" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#000000"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.31640625"
+     inkscape:cx="467.86301"
+     inkscape:cy="80.632883"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     inkscape:window-width="717"
+     inkscape:window-height="373"
+     inkscape:window-x="0"
+     inkscape:window-y="363"
+     inkscape:window-maximized="0" />
+  <metadata
+     id="metadata7">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(0,-892.36218)">
+    <path
+       style="fill:none;stroke:#ffffff;stroke-width:24;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       d="m 18.962964,970.97946 918.123446,0"
+       id="path2985"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cc" />
+    <flowRoot
+       xml:space="preserve"
+       id="flowRoot3757"
+       style="font-size:40px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;font-family:Sans"
+       transform="translate(-17.382716,882.5679)"><flowRegion
+         id="flowRegion3759"><rect
+           id="rect3761"
+           width="117.72839"
+           height="45.037037"
+           x="150.12346"
+           y="99.160492"
+           style="fill:#ffffff" /></flowRegion><flowPara
+         id="flowPara3763"
+         style="font-size:28px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Signika;-inkscape-font-specification:Signika;fill:#ffffff">1 Sep</flowPara></flowRoot>    <path
+       inkscape:connector-curvature="0"
+       id="path3755"
+       d="m 18.962964,970.97946 140.641976,0"
+       style="fill:none;stroke:#ff9a00;stroke-width:24;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       sodipodi:nodetypes="cc" />
+    <g
+       id="g3839">
+      <path
+         sodipodi:type="arc"
+         style="color:#000000;fill:#808000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:24;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+         id="path3787"
+         sodipodi:cx="366.61728"
+         sodipodi:cy="78.617287"
+         sodipodi:rx="14.11167"
+         sodipodi:ry="14.11167"
+         d="m 380.72895,78.617287 a 14.11167,14.11167 0 1 1 -28.22334,0 14.11167,14.11167 0 1 1 28.22334,0 z"
+         transform="matrix(1.0848214,0,0,1.0848214,-78.998233,885.81721)" />
+      <flowRoot
+         transform="translate(133.53087,833.58024)"
+         style="font-size:40px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#808000;fill-opacity:1;stroke:none;font-family:Sans"
+         id="flowRoot3789"
+         xml:space="preserve"><flowRegion
+           id="flowRegion3791"><rect
+             style="fill:#808000"
+             y="99.160492"
+             x="150.12346"
+             height="45.037037"
+             width="117.72839"
+             id="rect3793" /></flowRegion><flowPara
+           style="font-size:20px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Signika;-inkscape-font-specification:Signika;fill:#808000"
+           id="flowPara3795">Monthly</flowPara></flowRoot>    </g>
+    <g
+       id="g3846"
+       transform="translate(40.296296,0)">
+      <path
+         transform="matrix(1.0848214,0,0,1.0848214,26.088187,885.81721)"
+         d="m 388.74074,78.617287 c 0,12.218448 -9.90501,22.123453 -22.12346,22.123453 -12.21845,0 -22.12346,-9.905005 -22.12346,-22.123453 0,-12.218448 9.90501,-22.123457 22.12346,-22.123457 12.21845,0 22.12346,9.905009 22.12346,22.123457 z"
+         sodipodi:ry="22.123457"
+         sodipodi:rx="22.123457"
+         sodipodi:cy="78.617287"
+         sodipodi:cx="366.61728"
+         id="path3785"
+         style="color:#000000;fill:#ffff00;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:24;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+         sodipodi:type="arc" />
+      <flowRoot
+         xml:space="preserve"
+         id="flowRoot3797"
+         style="font-size:40px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#ffff00;fill-opacity:1;stroke:none;font-family:Sans"
+         transform="translate(217.28396,810.66666)"><flowRegion
+           id="flowRegion3799"><rect
+             id="rect3801"
+             width="143.01234"
+             height="45.037037"
+             x="150.12346"
+             y="99.160492"
+             style="fill:#ffff00" /></flowRegion><flowPara
+           id="flowPara3803"
+           style="font-size:32px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;fill:#ffff00;font-family:Signika;-inkscape-font-specification:Signika">Mid-term</flowPara></flowRoot>    </g>
+    <g
+       id="g3853"
+       transform="translate(305.77778,0)">
+      <path
+         transform="matrix(1.0848214,0,0,1.0848214,-78.998233,885.81721)"
+         d="m 380.72895,78.617287 c 0,7.79366 -6.31801,14.111669 -14.11167,14.111669 -7.79366,0 -14.11167,-6.318009 -14.11167,-14.111669 0,-7.79366 6.31801,-14.11167 14.11167,-14.11167 7.79366,0 14.11167,6.31801 14.11167,14.11167 z"
+         sodipodi:ry="14.11167"
+         sodipodi:rx="14.11167"
+         sodipodi:cy="78.617287"
+         sodipodi:cx="366.61728"
+         id="path3855"
+         style="color:#000000;fill:#808000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:24;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+         sodipodi:type="arc" />
+      <flowRoot
+         xml:space="preserve"
+         id="flowRoot3857"
+         style="font-size:40px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#808000;fill-opacity:1;stroke:none;font-family:Sans"
+         transform="translate(133.53087,833.58024)"><flowRegion
+           id="flowRegion3859"><rect
+             id="rect3861"
+             width="117.72839"
+             height="45.037037"
+             x="150.12346"
+             y="99.160492"
+             style="fill:#808000" /></flowRegion><flowPara
+           id="flowPara3863"
+           style="font-size:20px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;fill:#808000;font-family:Signika;-inkscape-font-specification:Signika">Monthly</flowPara></flowRoot>    </g>
+    <g
+       transform="translate(370.5679,0)"
+       id="g3903">
+      <path
+         sodipodi:type="arc"
+         style="color:#000000;fill:#ff0000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:24;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+         id="path3905"
+         sodipodi:cx="366.61728"
+         sodipodi:cy="78.617287"
+         sodipodi:rx="22.123457"
+         sodipodi:ry="22.123457"
+         d="m 388.74074,78.617287 c 0,12.218448 -9.90501,22.123453 -22.12346,22.123453 -12.21845,0 -22.12346,-9.905005 -22.12346,-22.123453 0,-12.218448 9.90501,-22.123457 22.12346,-22.123457 12.21845,0 22.12346,9.905009 22.12346,22.123457 z"
+         transform="matrix(1.0848214,0,0,1.0848214,26.088187,885.81721)" />
+      <flowRoot
+         transform="translate(235.4568,795.65431)"
+         style="font-size:40px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#ff0000;fill-opacity:1;stroke:none;font-family:Sans"
+         id="flowRoot3907"
+         xml:space="preserve"><flowRegion
+           id="flowRegion3909"><rect
+             style="fill:#ff0000"
+             y="99.160492"
+             x="150.12346"
+             height="60.049381"
+             width="149.33333"
+             id="rect3911" /></flowRegion><flowPara
+           style="font-size:48px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;fill:#ff0000;font-family:Signika;-inkscape-font-specification:Signika"
+           id="flowPara3913">IMO</flowPara></flowRoot>    </g>
+    <g
+       transform="translate(425.87655,0)"
+       id="g3915"
+       style="fill:#ffffff">
+      <path
+         sodipodi:type="arc"
+         style="color:#000000;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:24;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+         id="path3917"
+         sodipodi:cx="366.61728"
+         sodipodi:cy="78.617287"
+         sodipodi:rx="14.11167"
+         sodipodi:ry="14.11167"
+         d="m 380.72895,78.617287 c 0,7.79366 -6.31801,14.111669 -14.11167,14.111669 -7.79366,0 -14.11167,-6.318009 -14.11167,-14.111669 0,-7.79366 6.31801,-14.11167 14.11167,-14.11167 7.79366,0 14.11167,6.31801 14.11167,14.11167 z"
+         transform="matrix(1.0848214,0,0,1.0848214,-78.998233,885.81721)" />
+      <flowRoot
+         transform="translate(133.53087,887.30864)"
+         style="font-size:40px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;font-family:Sans"
+         id="flowRoot3919"
+         xml:space="preserve"><flowRegion
+           id="flowRegion3921"><rect
+             style="fill:#ffffff"
+             y="99.160492"
+             x="150.12346"
+             height="45.037037"
+             width="117.72839"
+             id="rect3923" /></flowRegion><flowPara
+           style="font-size:20px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;fill:#ffffff;font-family:Signika;-inkscape-font-specification:Signika"
+           id="flowPara3925">Mo-IMO</flowPara></flowRoot>    </g>
+    <g
+       id="g3927"
+       transform="translate(-75.061728,0)">
+      <path
+         transform="matrix(1.0848214,0,0,1.0848214,-78.998233,885.81721)"
+         d="m 380.72895,78.617287 c 0,7.79366 -6.31801,14.111669 -14.11167,14.111669 -7.79366,0 -14.11167,-6.318009 -14.11167,-14.111669 0,-7.79366 6.31801,-14.11167 14.11167,-14.11167 7.79366,0 14.11167,6.31801 14.11167,14.11167 z"
+         sodipodi:ry="14.11167"
+         sodipodi:rx="14.11167"
+         sodipodi:cy="78.617287"
+         sodipodi:cx="366.61728"
+         id="path3929"
+         style="color:#000000;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:24;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+         sodipodi:type="arc" />
+      <flowRoot
+         xml:space="preserve"
+         id="flowRoot3931"
+         style="font-size:40px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;font-family:Sans"
+         transform="translate(135.11112,833.58024)"><flowRegion
+           id="flowRegion3933"><rect
+             id="rect3935"
+             width="117.72839"
+             height="45.037037"
+             x="150.12346"
+             y="99.160492"
+             style="fill:#ffffff" /></flowRegion><flowPara
+           id="flowPara3937"
+           style="font-size:20px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;fill:#ffffff;font-family:Signika;-inkscape-font-specification:Signika">2-week</flowPara></flowRoot>    </g>
+    <use
+       x="0"
+       y="0"
+       xlink:href="#g3927"
+       id="use3947"
+       transform="translate(145.38272,0)"
+       width="960"
+       height="160" />
+    <use
+       x="0"
+       y="0"
+       xlink:href="#g3927"
+       id="use3949"
+       transform="translate(306.5679,0)"
+       width="960"
+       height="160" />
+    <use
+       x="0"
+       y="0"
+       xlink:href="#use3949"
+       id="use3951"
+       transform="translate(149.33333,0)"
+       width="960"
+       height="160" />
+    <path
+       sodipodi:nodetypes="cc"
+       inkscape:connector-curvature="0"
+       id="path3953"
+       d="m 855.7037,970.97946 81.38271,0"
+       style="fill:none;stroke:#00ffff;stroke-width:24;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" />
+    <flowRoot
+       transform="translate(665.28395,882.5679)"
+       style="font-size:40px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;font-family:Sans"
+       id="flowRoot3955"
+       xml:space="preserve"><flowRegion
+         id="flowRegion3957"><rect
+           y="99.160492"
+           x="150.12346"
+           height="45.037037"
+           width="117.72839"
+           id="rect3959"
+           style="fill:#ffffff" /></flowRegion><flowPara
+         style="font-size:28px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Signika;-inkscape-font-specification:Signika;fill:#ffffff"
+         id="flowPara3961">31 Jan</flowPara></flowRoot>  </g>
+</svg>
