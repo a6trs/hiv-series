@@ -11,7 +11,7 @@ putText = function (time, text, delay) {
     ));
 };
 
-var initMainPart = function () {
+var mainPart1 = function () {
     acg.put(0, acg.img('timeline.png',
         {x: 0.5, y: 0.5, ax: 0, ay: 0.5, opacity: 0.0001, scale: 1.1},
         ['+',
@@ -41,10 +41,46 @@ var initMainPart = function () {
     putText(31, '比如……这位。', 1);
     acg.put(34.5, acg.img('IMG_0043.JPG', {x: 0.5, y: 0.5, zorder: -999}, ['delay', 3]));
     putText(35, '还有这位，在开学不久就开始无聊了。', 2);
-    putText(37.5, '总体而言，', 0.8);
-    putText(38.3, '[就作者(叫笔者似乎不大合适)的观察来看，]', 1.2);
-    putText(39.5, '大家对于一模的态度还是不错的。', 1.5);
-    putText(41, '说到这里，我不得不提发生在327寝室的一件事。', 2.5);
+    putText(37.5, '总体而言，在这场重要的考试之前，', 2);
+    putText(39.5, '[就作者(叫笔者似乎不大合适)的观察来看，]', 1.2);
+    putText(40.7, '其实也没紧张到哪里去……', 1.3);
+    putText(42, '(至少在课下是这样。)', 1);
+    acg.end_offset();
+    acg.begin_offset(44);
+};
+
+var mainPart2 = function () {
+    acg.ext.background(0, [255, 255, 0]);
+    putText(1, '-= 327 寝室 =-', 1.6);
+    acg.put(0, acg.rect(
+        {x: 0, y: 0.17, width: 1, height: 0.013, colour: [0, 0, 0]},
+        ['delay', 6]
+    ));
+    acg.put(0, acg.ext.stickman({x: 0.3, y: 0.2, ax: 0, ay: 0}, ['delay', 6], {
+        'leg1': ['rotate-by', 0.001, 10],
+        'leg2': ['rotate-by', 0.001, -10],
+        'arm1': ['rotate-by', 0.001, 10],
+        'arm2': ['rotate-by', 0.001, -10]
+    }));
+    acg.put(3, acg.ext.nametag('LSQ', '6', 0.1, 0.25));
+    acg.put(0, acg.ext.stickman({x: 0.62, y: 0.2, ax: 0, ay: 0}, ['delay', 6], {
+        'leg1': ['rotate-by', 0.001, 10],
+        'leg2': ['rotate-by', 0.001, -10],
+        'arm1': ['rotate-by', 0.001, 10],
+        'arm2': ['rotate-by', 0.001, -10]
+    }));
+    acg.put(3, acg.ext.nametag('WT', '5', 0.72, 0.25));
+    acg.put(2.7, acg.ext.speechbub('还有一个礼拜就要一模了……', 0.72, 0.73,
+        0.8, 0, 0.77, -0.1, ['delay', 1.3]));   // #56
+    //acg.matter(56).drawDot(cc.p(0, 0), 3, acg.colour.RED);
+    console.log(acg.matter(56).getContentSize());
+};
+
+var initMainPart = function () {
+    acg.begin_offset(0);
+    mainPart1();
+    mainPart2();
+    acg.end_offset();
 };
 
 var initStage = function () {
@@ -77,6 +113,7 @@ var initStage = function () {
     acg.begin_offset(30);
     initMainPart();
     acg.end_offset(30);
+    acg.ext.background_commit();
     acg.commit();
     acg.ext.cp_enable();
     cc.director.setDisplayStats(false);
