@@ -114,17 +114,23 @@ var mainPart3 = function () {
         {x: 0.36, y: 0, ax: 0, ay: 0},
         ['delay', 27]
     ));
-    acg.put(0, acg.ext.stickman({x: 0.4, y: 0.2}, ['delay', 27], {
+    acg.put(0, acg.ext.stickman({x: 0.36, y: 0.072, scale: 1.3}, ['delay', 27], {
         'leg1': ['rotate-by', 0.001, 90],
         'leg2': ['rotate-by', 0.001, 90],
         'leg1-shin': ['+',
             ['rotate-by', 0.001, -80],
-            rpt(5, ['+', ['rotate-by', 0.6, 20], ['rotate-by', 0.6, -20]])
+            ['+'].concat(rpt(5, [['rotate-by', 0.6, 20], ['rotate-by', 0.6, -20]]))
         ], 'leg2-shin': ['+',
             ['rotate-by', 0.001, -80],
-            rpt(5, ['+', ['rotate-by', 0.6, -20], ['rotate-by', 0.6, 20]])
-        ]
+            ['+'].concat(rpt(5, [['rotate-by', 0.6, -20], ['rotate-by', 0.6, 20]]))
+        ], 'arm1': ['rotate-by', 0.001, 85],
+        'arm2': ['rotate-by', 0.001, 85]
     }));
+    acg.put(3, acg.ext.nametag('DHR', '六班学生', 0.5, 0.25));
+    acg.put(0, acg.rect(
+        {x: 0.27, y: 0.32, width: 30 / acg.width, height: 45 / acg.height, colour: [0, 0, 0]},
+        ['delay', 27]
+    ));
     //acg.begin_offset(xxx);
 };
 
