@@ -8,6 +8,17 @@ putText = function (time, text, delay) {
     if (delay) acg.ext.words(time + delay, '');
 };
 
+// acg.ac.parse 里面的 'repeat' 类型有问题……
+// 先写个代替方案再说……
+var rpt = function (times, array) {
+    if (times <= 1) return array.concat();
+    var r = array.concat(array);
+    while (--times >= 2)    // 要少用 forEach 吗??
+        //for (var i = 0; i < array.length; i++) r[r.length] = array[i];
+        r = r.concat(array);
+    return r;
+};
+
 var mainPart1 = function () {
     acg.put(0, acg.img('timeline.png',
         {x: 0.5, y: 0.5, ax: 0, ay: 0.5, opacity: 0.0001, scale: 1.1},
@@ -93,12 +104,27 @@ var mainPart2 = function () {
 
 var mainPart3 = function () {
     acg.ext.background(0, [64, 255, 64]);
-    acg.ext.words_colour(0, 0, 0);
+    acg.ext.words_colour(255, 255, 255);
     putText(1, '-= 319 寝室 =-', 1.6);
     acg.put(0, acg.rect(
-        {x: 0.25, y: 0, width: 0.01, height: 1, colour: [0, 0, 0]},
+        {x: 0.2, y: 0, width: 0.01, height: 1, colour: [0, 0, 0]},
         ['delay', 27]
     ));
+    acg.put(0, acg.img('chair.png',
+        {x: 0.36, y: 0, ax: 0, ay: 0},
+        ['delay', 27]
+    ));
+    acg.put(0, acg.ext.stickman({x: 0.4, y: 0.2}, ['delay', 27], {
+        'leg1': ['rotate-by', 0.001, 90],
+        'leg2': ['rotate-by', 0.001, 90],
+        'leg1-shin': ['+',
+            ['rotate-by', 0.001, -80],
+            rpt(5, ['+', ['rotate-by', 0.6, 20], ['rotate-by', 0.6, -20]])
+        ], 'leg2-shin': ['+',
+            ['rotate-by', 0.001, -80],
+            rpt(5, ['+', ['rotate-by', 0.6, -20], ['rotate-by', 0.6, 20]])
+        ]
+    }));
     //acg.begin_offset(xxx);
 };
 
