@@ -52,24 +52,43 @@ var mainPart2 = function () {
     putText(1, '-= 327 寝室 =-', 1.6);
     acg.put(0, acg.rect(
         {x: 0, y: 0.17, width: 1, height: 0.013, colour: [0, 0, 0]},
-        ['delay', 6]
+        ['delay', 27]
     ));
-    acg.put(0, acg.ext.stickman({x: 0.3, y: 0.2, ax: 0, ay: 0}, ['delay', 6], {
+    // This is LSQ.
+    acg.put(0, acg.ext.stickman({x: 0.3, y: 0.2, ax: 0, ay: 0}, ['delay', 27], {
         'leg1': ['rotate-by', 0.001, 10],
         'leg2': ['rotate-by', 0.001, -10],
         'arm1': ['rotate-by', 0.001, 10],
         'arm2': ['rotate-by', 0.001, -10]
     }));
     acg.put(3, acg.ext.nametag('LSQ', '六班学生', 0.1, 0.25));
-    acg.put(0, acg.ext.stickman({x: 0.62, y: 0.2, ax: 0, ay: 0}, ['delay', 6], {
-        'leg1': ['rotate-by', 0.001, 10],
-        'leg2': ['rotate-by', 0.001, -10],
-        'arm1': ['rotate-by', 0.001, 10],
+    // This is WT.
+    acg.put(0, acg.ext.stickman({x: 0.62, y: 0.2, ax: 0, ay: 0}, ['+',
+        ['delay', 5], ['move-by', 1, acg.p(0.18, 0)], ['delay', 21]
+    ], {
+        'leg1': ['+', ['rotate-by', 0.001, 10], ['delay', 5],
+            ['+', ['rotate-by', 0.5, -20], ['rotate-by', 0.5, 20]]
+        ], 'leg2': ['+', ['rotate-by', 0.001, -10], ['delay', 5],
+            ['+', ['rotate-by', 0.5, 20], ['rotate-by', 0.5, -20]]
+        ], 'arm1': ['rotate-by', 0.001, 10],
         'arm2': ['rotate-by', 0.001, -10]
     }));
     acg.put(3, acg.ext.nametag('WT', '五班学生', 0.72, 0.25));
-    acg.put(2.7, acg.ext.speechbub('还有一个礼拜就要一模了……', 0.72, 0.73,
-        0.8, 0, 0.77, -0.1, ['delay', 1.3]));
+    // I miss the conversation~~
+    acg.put(2.7, acg.ext.speechbub('还有一个礼拜就要一模了……', 0.75, 0.75, 0.8, 0, 0.76, -0.25, ['delay', 1.3]));
+    acg.put(5.5, acg.ext.speechbub('你紧张吗？', 0.75, 0.75, 0.8, 0, 0.95, -0.25, ['delay', 1]));
+    acg.put(7, acg.ext.speechbub('呃……', 0.25, 0.75, 0.2, 0, 0.45, -0.25, ['delay', 1.5]));
+    acg.put(8, acg.ext.speechbub('还……', 0.45, 0.5, 0, 0.5, -0.1, 1, ['delay', 1.5]));
+    acg.put(9, acg.ext.speechbub('还行吧……', 0.41, 0.35, 0, 0.5, -0.1, 1, ['delay', 1.5]));
+    acg.put(12, acg.ext.speechbub('唉……\n你们怎么都不紧张的……', .75, .75, .8, 0, .88, -.25, ['delay', 2.5]));
+    acg.put(14.5, acg.ext.speechbub('我每次考试前都好紧张', .75, .75, .8, 0, .88, -.25, ['delay', 1.9]));
+    acg.put(16.4, acg.ext.speechbub('然后考试的时候老是发挥不好……', .75, .75, .8, 0, .88, -.25, ['delay', 2.4]));
+    acg.put(20, acg.ext.speechbub('其实，有一个有效的办法', .3, .8, .24, 0, .35, -.35, ['delay', 1.5]));
+    acg.put(21.5, acg.ext.speechbub('就是不要紧张……', .3, .8, .24, 0, .35, -.35, ['delay', 1.5]));
+    putText(22.2, '注：这句话是废话', 1.3);
+    acg.put(23, acg.ext.speechbub('想着考试是给自己看\n而不是给别人看的，就过去了。',
+        .3, .77, .24, 0, .3, -.18, ['delay', 2.5]));
+    acg.ext.background(27, [0, 0, 0]);
 };
 
 var initMainPart = function () {
