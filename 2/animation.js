@@ -42,7 +42,6 @@ var mainPart1 = function () {
     putText(39.5, '[就作者(叫笔者似乎不大合适)的观察来看，]');
     putText(40.7, '气氛其实也没紧张到哪里去……');
     putText(42, '(至少在课下是这样。)', 1);
-    acg.end_offset();
     acg.begin_offset(44);
 };
 
@@ -52,10 +51,10 @@ var mainPart2 = function () {
     putText(1, '-= 327 寝室 =-', 1.6);
     acg.put(0, acg.rect(
         {x: 0, y: 0.17, width: 1, height: 0.013, colour: [0, 0, 0]},
-        ['delay', 27]
+        ['delay', 28]
     ));
     // This is LSQ.
-    acg.put(0, acg.ext.stickman({x: 0.3, y: 0.2, ax: 0, ay: 0}, ['delay', 27], {
+    acg.put(0, acg.ext.stickman({x: 0.3, y: 0.2, ax: 0, ay: 0}, ['delay', 28], {
         'leg1': ['rotate-by', 0.001, 10],
         'leg2': ['rotate-by', 0.001, -10],
         'arm1': ['rotate-by', 0.001, 10],
@@ -64,7 +63,7 @@ var mainPart2 = function () {
     acg.put(3, acg.ext.nametag('LSQ', '六班学生', 0.1, 0.25));
     // This is WT.
     acg.put(0, acg.ext.stickman({x: 0.62, y: 0.2, ax: 0, ay: 0}, ['+',
-        ['delay', 5], ['move-by', 1, acg.p(0.18, 0)], ['delay', 21]
+        ['delay', 5], ['move-by', 1, acg.p(0.18, 0)], ['delay', 22]
     ], {
         'leg1': ['+', ['rotate-by', 0.001, 10], ['delay', 5],
             ['+', ['rotate-by', 0.5, -20], ['rotate-by', 0.5, 20]]
@@ -89,13 +88,27 @@ var mainPart2 = function () {
     acg.put(23, acg.ext.speechbub('想着考试是给自己看\n而不是给别人看的，就过去了。',
         .3, .77, .24, 0, .3, -.18, ['delay', 2.5]));
     acg.ext.background(27, [0, 0, 0]);
+    acg.begin_offset(29);
+};
+
+var mainPart3 = function () {
+    acg.ext.background(0, [64, 255, 64]);
+    acg.ext.words_colour(0, 0, 0);
+    putText(1, '-= 319 寝室 =-', 1.6);
+    acg.put(0, acg.rect(
+        {x: 0.25, y: 0, width: 0.01, height: 1, colour: [0, 0, 0]},
+        ['delay', 27]
+    ));
+    //acg.begin_offset(xxx);
 };
 
 var initMainPart = function () {
-    acg.begin_offset(0);
     mainPart1();
     mainPart2();
+    mainPart3();
     acg.end_offset();
+    acg.end_offset();
+    //acg.end_offset();
 };
 
 var initStage = function () {
@@ -131,6 +144,7 @@ var initStage = function () {
     acg.ext.background_commit();
     acg.ext.words_commit();
     acg.commit();
+    console.log('Total time: ' + acg.tot_time() + 's');
     acg.ext.cp_enable();
     cc.director.setDisplayStats(false);
 };
