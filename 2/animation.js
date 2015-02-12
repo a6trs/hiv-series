@@ -105,7 +105,7 @@ var mainPart2 = function () {
 var mainPart3 = function () {
     acg.ext.background(0, [64, 255, 64]);
     acg.ext.words_colour(255, 255, 255);
-    putText(1, '-= 319 寝室 =-', 1.6);
+    putText(1, '-= 319 寝室 =-\n-= 一模前一周某日下午 =-', 1.6);
     ///////////////////// DHR Part /////////////////////
     var toDHRend = ['+', ['delay', 9], ['ease-sine-in', ['move-by', 1, acg.p(-0.55, 0)]]];
     // The wall
@@ -201,6 +201,20 @@ var mainPart3 = function () {
         .45, .63, .8, 0, .9, -.25, ['delay', 2.3]));
     ///////////////////// ZHF Part /////////////////////
     acg.ext.background(18, [0, 0, 0]);
+    acg.ext.words_colour(255, 255, 255);
+    putText(18.5, '-= 319 寝室 =-\n-= 一模前一周某日熄灯后 =-', 1.6);
+    acg.put(19.8, acg.ext.nametag('ZHF', '六班学生', 0.5, 0.5, acg.colour.WHITE));
+    putText(21, 'TODO: Bla bla bla.', 3.1);
+    acg.begin_offset(25);
+};
+
+var mainPart4 = function () {
+    acg.ext.background(0, [255, 255, 255]);
+    acg.ext.words_colour(0, 0, 0);
+    putText(1, '-= 初三(6)班教室 =-\n-= 一模前一周某日xxx =-', 1.6);
+    acg.put(0, acg.text(
+        {x: 0.5, y: 0.5, text: 'TODO: 老板来点想法~~ T^T', colour: [0, 0, 0]}, ['delay', 3]
+    ));
     //acg.begin_offset(xxx);
 };
 
@@ -208,6 +222,8 @@ var initMainPart = function () {
     mainPart1();
     mainPart2();
     mainPart3();
+    mainPart4();
+    acg.end_offset();
     acg.end_offset();
     acg.end_offset();
     //acg.end_offset();
