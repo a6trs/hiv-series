@@ -106,15 +106,23 @@ var mainPart3 = function () {
     acg.ext.background(0, [64, 255, 64]);
     acg.ext.words_colour(255, 255, 255);
     putText(1, '-= 319 寝室 =-', 1.6);
+    var toDHRend = ['+', ['delay', 9], ['ease-sine-in', ['move-by', 1, acg.p(-0.55, 0)]]];
+    // The wall
     acg.put(0, acg.rect(
         {x: 0.2, y: 0, width: 0.01, height: 1, colour: [0, 0, 0]},
-        ['delay', 27]
+        toDHRend.concat()
     ));
+    // The table (...)
+    acg.put(0, acg.rect(
+        {x: 0.2, y: 0.31, width: 0.09, height: 0.013, colour: [0, 0, 0]},
+        toDHRend.concat()
+    ));
+    // The chair
     acg.put(0, acg.img('chair.png',
         {x: 0.36, y: 0, ax: 0, ay: 0},
-        ['delay', 27]
+        toDHRend.concat()
     ));
-    acg.put(0, acg.ext.stickman({x: 0.36, y: 0.072, scale: 1.3}, ['delay', 27], {
+    acg.put(0, acg.ext.stickman({x: 0.36, y: 0.072, scale: 1.3}, toDHRend.concat(), {
         'leg1': ['rotate-by', 0.001, 90],
         'leg2': ['rotate-by', 0.001, 90],
         'leg1-shin': ['+',
@@ -127,10 +135,23 @@ var mainPart3 = function () {
         'arm2': ['rotate-by', 0.001, 85]
     }));
     acg.put(3, acg.ext.nametag('DHR', '六班学生', 0.5, 0.25));
+    // The recorder (...)
     acg.put(0, acg.rect(
         {x: 0.27, y: 0.32, width: 30 / acg.width, height: 45 / acg.height, colour: [0, 0, 0]},
-        ['delay', 27]
+        toDHRend.concat()
     ));
+    acg.put(0, acg.text(
+        {x: 0.2, y: 0.5, fontsize: 26,
+            text: '录音中', colour: [108, 0, 0], zorder: 99},
+        ['+', ['delay', 4], ['fade-out', 0.2]]
+    ));
+    acg.put(2, acg.ext.speechbub('天下的事情\n有困难和容易的区别吗？', .5, .72, .2, 0, .1, -.25, ['delay', 3]));
+    acg.put(5, acg.ext.speechbub('如果去做了，\n那么困难的事也会变容易；', .5, .72, .2, 0, .1, -.25, ['delay', 3]));
+    acg.put(8, acg.ext.speechbub('如果不去做，\n那么容易的事也会变困难。', .5, .72, .2, 0, .1, -.25,
+        ['+', ['delay', 1], ['ease-sine-in', ['move-by', 1, acg.p(-0.55, 0)]]]));
+    acg.ext.words_colour(0, 0, 0);
+    putText(7.1, '这位读《点击》以复习语文……', 1.6);
+    putText(9.5, '而这位……', 0.9);
     //acg.begin_offset(xxx);
 };
 
