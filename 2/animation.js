@@ -154,35 +154,53 @@ var mainPart3 = function () {
     putText(7.1, '这位读《点击》以复习语文……', 1.6);
     putText(9.5, '而这位……', 0.9);
     ///////////////////// JHZ Part /////////////////////
-    var fromJHZbegin =
-        ['+', ['ease-sine-out', ['move-by', 1, acg.p(-0.55, 0)]], ['delay', 9]];
+    // JHZ part lasts from +10.0s to +18.0s, plus 0.2s transition (out)
+    // Formally starts at +11.0s, since 1.0s is used to move JHZ in.
+    var fromJHZbegin = function () {
+        return ['+', ['ease-sine-out', ['move-by', 1, acg.p(-0.55, 0)]], ['delay', 7.2]];
+    };
     // The wall, will move by (-0.55, 0)
     acg.put(10, acg.rect(
         {x: 0.8 + 0.55, y: 0, width: 0.01, height: 1, colour: [0, 0, 0]},
-        // XXX: fromJHZbegin.concat() not working.
-        ['+', ['ease-sine-out', ['move-by', 1, acg.p(-0.55, 0)]], ['delay', 9]]
+        fromJHZbegin()
     ));
     // The table (...)
     acg.put(10, acg.rect(
         {x: 0.8 + 0.55 - 0.09, y: 0.31, width: 0.09, height: 0.013, colour: [0, 0, 0]},
-        ['+', ['ease-sine-out', ['move-by', 1, acg.p(-0.55, 0)]], ['delay', 9]]
+        fromJHZbegin()
     ));
     // The chair
     acg.put(10, acg.img('chair.png',
         {x: 0.64 + 0.55, y: 0, ax: 1, ay: 0, flipx: true},
-        fromJHZbegin.concat()
+        fromJHZbegin()
     ));
-    acg.put(10, acg.ext.stickman({x: 0.67 + 0.55 - acg.ext.sm_headsize,
-        y: 0, ax: 0, ay: 0, scale: 1.3},
-        ['+', ['ease-sine-out', ['move-by', 1, acg.p(-0.55, 0)]], ['delay', 9]], {
+    acg.put(10, acg.ext.stickman({x: 0.7 + 0.55 - acg.ext.sm_headsize,
+        y: 0, ax: 0, ay: 0, scale: 1.3}, fromJHZbegin(), {
         'leg1': ['rotate-by', 0.001, -90],
         'leg2': ['rotate-by', 0.001, -90],
         'leg1-shin': ['rotate-by', 0.001, 80],
         'leg2-shin': ['rotate-by', 0.001, 80],
-        'arm1': ['rotate-by', 0.001, -85],
-        'arm2': ['rotate-by', 0.001, -85]
+        'arm1': ['+', ['rotate-by', 0.001, -85], ['delay', 2], ['rotate-by', 0.7, -30]],
+        'arm2': ['+', ['rotate-by', 0.001, -85], ['delay', 2], ['rotate-by', 0.7, -30]]
     }));
-    acg.put(13, acg.ext.nametag('JHZ', '六班学生', 0.5, 0.25));
+    // Optical
+    acg.put(10, acg.rect(
+        {x: 0.67 + 0.55, y: 0.38, width: 0.01, height: 0.1,
+            colour: [128, 128, 128], rotation: 18},
+        // Too lazy to add an optional parameter to fromJHZbegin()
+        ['+', ['ease-sine-out', ['move-by', 1, acg.p(-0.55, 0)]],
+            ['delay', 1], ['move-by', 0.7, acg.p(-0.01, 0.05)],
+            ['delay', 1], ['rotate-by', 0.3, -15],
+            ['delay', 4], ['fade-out', 0.2]
+        ]
+    ));
+    // Hope you won't pay too much attention to that dot...
+    putText(11.6, '则是在饶有兴趣地研究\n.  相机上掉下来的光学器件。', 3.1);
+    acg.put(13, acg.ext.nametag('JHZ', '六班学生', 0.22, 0.25));
+    acg.put(13.5, acg.ext.speechbub('LSQ，这玩意是透光的～',
+        .45, .63, .8, 0, .9, -.25, ['delay', 2.3]));
+    ///////////////////// ZHF Part /////////////////////
+    acg.ext.background(18, [0, 0, 0]);
     //acg.begin_offset(xxx);
 };
 
