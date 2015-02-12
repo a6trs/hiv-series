@@ -106,6 +106,7 @@ var mainPart3 = function () {
     acg.ext.background(0, [64, 255, 64]);
     acg.ext.words_colour(255, 255, 255);
     putText(1, '-= 319 寝室 =-', 1.6);
+    ///////////////////// DHR Part /////////////////////
     var toDHRend = ['+', ['delay', 9], ['ease-sine-in', ['move-by', 1, acg.p(-0.55, 0)]]];
     // The wall
     acg.put(0, acg.rect(
@@ -152,6 +153,36 @@ var mainPart3 = function () {
     acg.ext.words_colour(0, 0, 0);
     putText(7.1, '这位读《点击》以复习语文……', 1.6);
     putText(9.5, '而这位……', 0.9);
+    ///////////////////// JHZ Part /////////////////////
+    var fromJHZbegin =
+        ['+', ['ease-sine-out', ['move-by', 1, acg.p(-0.55, 0)]], ['delay', 9]];
+    // The wall, will move by (-0.55, 0)
+    acg.put(10, acg.rect(
+        {x: 0.8 + 0.55, y: 0, width: 0.01, height: 1, colour: [0, 0, 0]},
+        // XXX: fromJHZbegin.concat() not working.
+        ['+', ['ease-sine-out', ['move-by', 1, acg.p(-0.55, 0)]], ['delay', 9]]
+    ));
+    // The table (...)
+    acg.put(10, acg.rect(
+        {x: 0.8 + 0.55 - 0.09, y: 0.31, width: 0.09, height: 0.013, colour: [0, 0, 0]},
+        ['+', ['ease-sine-out', ['move-by', 1, acg.p(-0.55, 0)]], ['delay', 9]]
+    ));
+    // The chair
+    acg.put(10, acg.img('chair.png',
+        {x: 0.64 + 0.55, y: 0, ax: 1, ay: 0, flipx: true},
+        fromJHZbegin.concat()
+    ));
+    acg.put(10, acg.ext.stickman({x: 0.67 + 0.55 - acg.ext.sm_headsize,
+        y: 0, ax: 0, ay: 0, scale: 1.3},
+        ['+', ['ease-sine-out', ['move-by', 1, acg.p(-0.55, 0)]], ['delay', 9]], {
+        'leg1': ['rotate-by', 0.001, -90],
+        'leg2': ['rotate-by', 0.001, -90],
+        'leg1-shin': ['rotate-by', 0.001, 80],
+        'leg2-shin': ['rotate-by', 0.001, 80],
+        'arm1': ['rotate-by', 0.001, -85],
+        'arm2': ['rotate-by', 0.001, -85]
+    }));
+    acg.put(13, acg.ext.nametag('JHZ', '六班学生', 0.5, 0.25));
     //acg.begin_offset(xxx);
 };
 
