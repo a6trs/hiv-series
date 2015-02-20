@@ -1,5 +1,11 @@
 var acg = acg || {};
 acg.ext = acg.ext || {};
+//var loc = window.location.href;
+//loc = loc.substr(0, loc.lastIndexOf('/'));
+//loc = loc.substr(0, loc.lastIndexOf('/'));
+//acg.ext.set_res_path(loc + 'acg-res');
+acg.ext.set_res_path('acg-res');
+acg.ext._233_enable();
 
 var initStage = function () {
     acg.ext.background(0, [255, 255, 0]);
