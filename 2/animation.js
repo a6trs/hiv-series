@@ -1,5 +1,6 @@
 var acg = acg || {};
 acg.ext = acg.ext || {};
+acg.ext.set_res_path('acg-res');
 
 // 懒得再去修改 acg.ext.words 的实现了，干脆直接在这里写一个
 // TODO: 把 acg.ext.words 的实现变成这个
@@ -41,7 +42,7 @@ var mainPart1 = function () {
     acg.put(18, acg.img('IMG_0018.JPG', {x: 0.5, y: 0.5}, ['delay', 5]));
     putText(18.5, '在一模准备期间，连这位平常事情不多的老师……');
     putText(21.5, '都能做出这种错乱的事……');
-    putText(23, '可见，一模真是……哎。', 2.5);
+    putText(23, '可见，一模的影响力巨大啊。(来自DHR)', 2.5);
 
     putText(27, '不过你知道吗……');
     putText(28.5, '在紧张的学习背后，总有人忙里偷闲……');
@@ -49,11 +50,20 @@ var mainPart1 = function () {
     putText(31, '比如……这位。', 1);
     acg.put(34.5, acg.img('IMG_0043.JPG', {x: 0.5, y: 0.5}, ['delay', 3]));
     putText(35, '还有这位，在开学不久就开始无聊了。', 2);
-    putText(37.5, '总体而言，在这场重要的考试之前，');
-    putText(39.5, '[就作者(叫笔者似乎不大合适)的观察来看，]');
-    putText(40.7, '气氛其实也没紧张到哪里去……');
-    putText(42, '(至少在课下是这样。)', 1);
-    acg.begin_offset(44);
+    putText(37.5, '在这场重要的考试之前，');
+    putText(38.7, 'XXXXXX.');
+    putText(40, '(啊，扯远了，不管的)', 1.7);
+    acg.put(43, acg.text(
+        {x: 0.5, y: 0.5, fontsize: 34,
+            text: 'WARNING\n以下内容纯属娱乐，无实际意义\n且有一定编造成分',
+            colour: [255, 255, 255], zorder: 99}, ['delay', 4]
+    ));
+    acg.put(46, acg.text(
+        {x: 0.5, y: 0.24, fontsize: 18,
+            text: '(我怎么可能告诉你这是为了炫耀用代码写出的火柴人呢!)',
+            colour: [255, 255, 255], zorder: 99}, ['delay', 1]
+    ));
+    acg.begin_offset(47);
 };
 
 var mainPart2 = function () {
@@ -263,7 +273,9 @@ var initStage = function () {
     acg.ext.words_commit();
     acg.commit();
     console.log('Total time: ' + acg.tot_time() + 's');
-    acg.ext.cp_enable();
+    acg.ext.cp_enable(function (time, type, colour, cmt) {
+        alert(time + '\n' + type + ' ' + colour + '\n' + cmt);
+    });
     cc.director.setDisplayStats(false);
 };
 
