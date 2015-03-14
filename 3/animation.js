@@ -43,8 +43,8 @@ var initStage = function () {
     ));
     acg.ext.words(18.2, '');
     acg.ext.words(20, '嗯没错，今天就是 Pi Day。');
-    acg.ext.words(21.7, '刚刚才意识到今天还是爱因斯坦的生日……哦不管的。');
-    acg.ext.words(24.5, '还有白色情人节……');
+    acg.ext.words(21.7, '刚意识到今天还是爱因斯坦的生日……\n哦不管的。');
+    acg.ext.words(24.5, '还有白色情人节……哦不管的。');
     acg.ext.words(25.3, '');
     /*acg.ext.words(26.5, '……');
     acg.ext.words(28, '');  <-- 搞笑用，不必在意
@@ -57,7 +57,7 @@ var initStage = function () {
     acg.ext.words(28.3, '请自行把颜色脑补成紫色');
     acg.ext.words(29.6, '并且将其脑补为香芋派。');
     acg.ext.words(30.9, '(原谅我忘记了另一个派的品种 ==)');
-    acg.ext.words(32, '2013年3月14日，班级举行的 Pi Day 活动～');
+    acg.ext.words(32, '2013年3月14日，班级举行的 Pi Day 活动～\n这就是奖品之一～');
     acg.put(32.6, acg.text(
         {x: 0.5, y: 0.5, fontsize: 40,
             text: 'TODO: 此处应有自拍', colour: [0, 0, 0]},
@@ -115,19 +115,20 @@ var initStage = function () {
     acg.ext.words(53, '来自华二初中2015届6班。');
     acg.ext.words(54.4, '自从便便在班级QQ群里手抽把hhh打成hhj之后，');
     acg.ext.words(56.6, '这个词便在班级群和本班内广泛流传。');
-    acg.ext.words(58.3, '差不多了，我今天的任务就到这里。');
-    acg.ext.words(60, '以后会有更多这种玩意发布……');
-    acg.ext.words(61.6, '此外，还有一个神秘项目正在进行中……');
-    acg.put(61.6, acg.img('imaginative.png',
+    acg.ext.words(58.3, '差不多了，我今天的任务就到这里。\n(我只是来宣布HHJ的开始的。)');
+    acg.ext.words(60, '以后会有更多这种玩意发布……\n(不知道算不算视频……毕竟还不是MP4啊)');
+    acg.ext.words(62.4, '此外，还有一个神秘项目正在进行中……');
+    acg.put(62.4, acg.img('imaginative.png',
         {x: 0.5, y: 0.5, opacity: 0.01},
         ['+', ['fade-in', 0.3], ['delay', 3.8], ['fade-out', 0.3]]
     ));
-    acg.ext.words(63.3, '按照目前的进度，下周基本就能公布。');
-    acg.ext.words(65.1, '(我知道你们很想看看这货于是简单剧透了一下)');
-    acg.ext.words(67.2, '更多提示：');
-    acg.ext.words(67.8, '你好的，不灵，精英都是不上厕所滴～～');
-    acg.ext.words(69.1, '再会～～～');
-    acg.put(70, acg.text(
+    acg.ext.words(64.1, '按照目前的进度，下周基本就能公布。');
+    acg.ext.words(65.7, '(我知道你们很想看看这货于是简单剧透了一下)\n(上面那货即为一部分代码)');
+    acg.ext.words(68, '更多提示：');
+    acg.ext.words(68.6, '你好的，不灵，精英都是不上厕所滴～～');
+    acg.ext.words(69.9, '再会～～～');
+    acg.ext.words(70.8, '');
+    acg.put(70.8, acg.text(
         {x: 0.5, y: 0.5, fontsize: 40,
             text: 'TODO: 此处应有另一张自拍', colour: [0, 0, 0]},
         ['delay', 0.2]
