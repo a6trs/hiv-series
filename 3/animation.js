@@ -4,6 +4,7 @@ acg.ext.set_res_path('acg-res');
 acg.ext._233_enable();
 
 var initStage = function () {
+    alert('Checkpoint #1');
     var now = new Date();
     var now_str = now.getFullYear() + '.' + (now.getMonth() + 1) + '.' + now.getDate();
     acg.put(2, acg.text(
@@ -138,6 +139,7 @@ var initStage = function () {
     acg.ext.words_commit();
     acg.commit();
     cc.director.setDisplayStats(false);
+    alert('Checkpoint #2');
 
     ///// 弹幕～～ //////
     acg.ext.cp_enable(function (time, type, colour, cmt) {
@@ -148,11 +150,14 @@ var initStage = function () {
             + '&colour=%23' + colour.substr(1) + '&text=' + cmt;
         document.body.appendChild(lmnt);
     });
+    alert('Checkpoint #3');
     acg.ext._233_commit();
+    alert('Checkpoint #4');
     // Load all comments
     var lmnt = document.createElement('script');
     lmnt.src = 'http://cg-u4.cn.gp/comment.php?page_id=3&action=retrieve';
     document.head.appendChild(lmnt);
+    alert('Checkpoint #5');
 };
 
 acg.bootstrap('game_canvas', 16 / 9, initStage);
