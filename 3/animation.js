@@ -1,7 +1,10 @@
+alert('Checkpoint #-2');
 var acg = acg || {};
 acg.ext = acg.ext || {};
 acg.ext.set_res_path('acg-res');
+alert('Checkpoint #-1');
 acg.ext._233_enable();
+alert('Checkpoint #0');
 
 var initStage = function () {
     alert('Checkpoint #1');
