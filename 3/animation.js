@@ -1,6 +1,7 @@
 var acg = acg || {};
 acg.ext = acg.ext || {};
 acg.ext.set_res_path('acg-res');
+acg.ext._233_enable();
 
 var initStage = function () {
     var now = new Date();
@@ -147,7 +148,6 @@ var initStage = function () {
             + '&colour=%23' + colour.substr(1) + '&text=' + cmt;
         document.body.appendChild(lmnt);
     });
-    acg.ext._233_enable();
     // Load all comments
     var lmnt = document.createElement('script');
     lmnt.src = 'http://cg-u4.cn.gp/comment.php?page_id=3&action=retrieve';
