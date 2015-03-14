@@ -1,6 +1,8 @@
 alert('Checkpoint #-2');
 var acg = acg || {};
+alert('Checkpoint #-1.9');
 acg.ext = acg.ext || {};
+alert('Checkpoint #-1.8');
 acg.ext.set_res_path('acg-res');
 alert('Checkpoint #-1');
 acg.ext._233_enable();
