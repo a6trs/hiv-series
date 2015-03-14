@@ -136,10 +136,22 @@ var initStage = function () {
     acg.ext.background_commit();
     acg.ext.words_commit();
     acg.commit();
-    acg.ext.cp_enable(function (time, type, colour, cmt) {
-        alert(time + '\n' + type + ' ' + colour + '\n' + cmt);
-    });
     cc.director.setDisplayStats(false);
+
+    ///// 弹幕～～ //////
+    acg.ext.cp_enable(function (time, type, colour, cmt) {
+        acg.ext._233_add(time + 0.5, cmt, acg.colour(colour), type);
+        var lmnt = document.createElement('script');
+        lmnt.src = 'http://cg-u4.cn.gp/comment.php?page_id=3&action=post&time='
+            + time.toString() + '&type=' + type.toString()
+            + '&colour=%23' + colour.substr(1) + '&text=' + cmt;
+        document.body.appendChild(lmnt);
+    });
+    acg.ext._233_enable();
+    // Load all comments
+    var lmnt = document.createElement('script');
+    lmnt.src = 'http://cg-u4.cn.gp/comment.php?page_id=3&action=retrieve';
+    document.head.appendChild(lmnt);
 };
 
 acg.bootstrap('game_canvas', 16 / 9, initStage);
