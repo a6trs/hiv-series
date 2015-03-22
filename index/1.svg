@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="360"
+   height="120"
+   id="svg4000"
+   version="1.1"
+   inkscape:version="0.48.4 r9939"
+   sodipodi:docname="新建文档 4">
+  <defs
+     id="defs4002" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffeedd"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="1"
+     inkscape:pageshadow="2"
+     inkscape:zoom="3.375"
+     inkscape:cx="180"
+     inkscape:cy="60"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     inkscape:window-width="1366"
+     inkscape:window-height="744"
+     inkscape:window-x="0"
+     inkscape:window-y="24"
+     inkscape:window-maximized="1" />
+  <metadata
+     id="metadata4005">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(0,-932.36218)">
+    <g
+       id="g4565"
+       transform="matrix(0.99972765,0.02333709,-0.02333709,0.99972765,240.59941,13.850261)">
+      <rect
+         transform="translate(0,932.36218)"
+         y="24.888889"
+         x="25.777779"
+         height="64.888885"
+         width="104.99242"
+         id="rect4019"
+         style="color:#000000;fill:#202000;fill-opacity:1;fill-rule:nonzero;stroke:#202000;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" />
+      <rect
+         y="962.43536"
+         x="31.839033"
+         height="54.371498"
+         width="93.431244"
+         id="rect4529"
+         style="color:#000000;fill:#2020b0;fill-opacity:1;fill-rule:nonzero;stroke:#2030ff;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" />
+      <text
+         sodipodi:linespacing="125%"
+         id="text4531"
+         y="973.84369"
+         x="39.111111"
+         style="font-size:40px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#b3b3b3;fill-opacity:1;stroke:none;font-family:Sans"
+         xml:space="preserve"><tspan
+           style="font-size:10px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;fill:#b3b3b3;font-family:Signika;-inkscape-font-specification:Signika"
+           y="973.84369"
+           x="39.111111"
+           id="tspan4533"
+           sodipodi:role="line">2015-01-22星期四</tspan><tspan
+           id="tspan4535"
+           style="font-size:10px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;fill:#b3b3b3;font-family:Signika;-inkscape-font-specification:Signika"
+           y="987.17584"
+           x="39.111111"
+           sodipodi:role="line">11:32        008964L</tspan><tspan
+           id="tspan4537"
+           style="font-size:10px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;fill:#b3b3b3;font-family:Signika;-inkscape-font-specification:Signika"
+           y="999.67584"
+           x="39.111111"
+           sodipodi:role="line">      请正常使用</tspan><tspan
+           id="tspan4541"
+           style="font-size:10px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;fill:#b3b3b3;font-family:Signika;-inkscape-font-specification:Signika"
+           y="1012.3889"
+           x="39.111111"
+           sodipodi:role="line">滤料：</tspan></text>
+      <rect
+         y="1004.3622"
+         x="68.444443"
+         height="9.7777777"
+         width="4.5999999"
+         id="rect4543"
+         style="color:#000000;fill:#b3b3b3;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" />
+      <use
+         transform="translate(6,0)"
+         height="120"
+         width="360"
+         id="use4547"
+         xlink:href="#rect4543"
+         y="0"
+         x="0" />
+      <use
+         transform="translate(12,0)"
+         height="120"
+         width="360"
+         id="use4551"
+         xlink:href="#rect4543"
+         y="0"
+         x="0" />
+      <use
+         height="120"
+         width="360"
+         transform="translate(36,0)"
+         id="use4553"
+         xlink:href="#rect4543"
+         y="0"
+         x="0" />
+      <use
+         transform="translate(-6,0)"
+         height="120"
+         width="360"
+         id="use4555"
+         xlink:href="#use4553"
+         y="0"
+         x="0" />
+      <use
+         transform="translate(-6,0)"
+         height="120"
+         width="360"
+         id="use4557"
+         xlink:href="#use4555"
+         y="0"
+         x="0" />
+      <use
+         transform="translate(-6,0)"
+         height="120"
+         width="360"
+         id="use4559"
+         xlink:href="#use4557"
+         y="0"
+         x="0" />
+      <use
+         height="120"
+         width="360"
+         transform="translate(42,0)"
+         id="use4561"
+         xlink:href="#rect4543"
+         y="0"
+         x="0" />
+      <use
+         height="120"
+         width="360"
+         transform="translate(48,0)"
+         id="use4563"
+         xlink:href="#rect4543"
+         y="0"
+         x="0" />
+    </g>
+    <path
+       style="fill:#b3b3b3;fill-opacity:1;stroke:none"
+       d="m 293.42313,63.221945 c 0,0 -3.82173,4.4943 -2.61892,6.494906 0.68749,1.143491 3.08049,1.403789 3.98075,0.419026 1.58489,-1.733662 -1.36183,-6.913932 -1.36183,-6.913932 z"
+       id="path4645"
+       inkscape:connector-curvature="0"
+       transform="translate(0,932.36218)"
+       sodipodi:nodetypes="caac" />
+    <path
+       style="color:#000000;fill:#2020b0;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       id="path4649"
+       d="m 294.73596,67.801436 c 0.0546,0.29024 0.0844,0.58477 0.0766,0.87991 -0.005,0.265801 -0.0941,0.506211 -0.2045,0.743365 -0.28137,0.604378 -1.13609,0.206456 -0.85472,-0.397923 l 0,0 c 0.0592,-0.12715 0.11868,-0.240236 0.11727,-0.38565 0.0182,-0.218226 -0.0287,-0.439442 -0.0592,-0.654802 -0.13075,-0.65372 0.79375,-0.83862 0.9245,-0.1849 z"
+       inkscape:connector-curvature="0"
+       transform="translate(0,932.36218)" />
+    <rect
+       style="color:#000000;fill:#ffeedd;fill-opacity:0.50196081;fill-rule:nonzero;stroke:none;stroke-width:2;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       id="rect4583"
+       width="210.37038"
+       height="141.33333"
+       x="145.18518"
+       y="-12.148149"
+       transform="translate(0,932.36218)" />
+  </g>
+</svg>

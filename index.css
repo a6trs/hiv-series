@@ -1,0 +1,39 @@
+body {
+  margin: 0px;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+.title-banner {
+  font-weight: bold;
+  font-size: 72px;
+  text-shadow: 1px 1px 3px #cc0;
+  padding: 1.2em 1.2em 1.6em 1.2em;
+  background: url(index/IMG_0085.JPG) repeat scroll center center / cover #F0F0F0;
+}
+
+.entry-banner {
+  font-size: 30px;
+  padding: 1.2em;
+  background: none repeat scroll center center / cover #F0F0F0;
+}
+
+.entry-banner .title {
+  font-weight: bold;
+  font-size: 1.8em;
+}
+
+.entry-banner a {
+  color: inherit;
+}
+
+.banner-ralign {
+  text-align: right;
+}
+
+.banner-revclr {
+  color: #eee;
+}
+
+.num {
+  font-size: 1.6em;
+}
